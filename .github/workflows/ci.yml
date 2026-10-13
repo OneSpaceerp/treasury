@@ -97,6 +97,5 @@ jobs:
         if: failure()
         run: |
           tail -n 150 "$RUNNER_TEMP/ci.log" | cut -c1-400 > tail.txt
-          message=$(sed 's/%/%25/g' tail.txt | sed ':a;N;$!ba;s/
-/%0A/g')
+          message=$(awk '{gsub(/%/,"%25"); printf "%s%%0A", $0}' tail.txt)
           echo "::error title=CI log tail::$message"
