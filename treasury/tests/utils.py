@@ -4,6 +4,9 @@ Everything is created under a dedicated company so the tests do not depend on
 ERPNext's own test records.
 """
 
+# Importing ERPNext's test utilities bootstraps the master data a bare test
+# site lacks: fiscal years, party types, customer/supplier groups, territories.
+import erpnext.tests.utils
 import frappe
 from erpnext.accounts.utils import get_balance_on
 from frappe.tests import IntegrationTestCase
