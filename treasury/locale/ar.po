@@ -1,0 +1,289 @@
+# Arabic translations for Treasury.
+# Copyright (C) 2026 nsdLabs
+# This file is distributed under the same license as the Treasury project.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Treasury 1.0.0\n"
+"Report-Msgid-Bugs-To: info@nestsoftware.dev\n"
+"POT-Creation-Date: 2026-10-14 12:00+0000\n"
+"PO-Revision-Date: 2026-10-14 12:00+0000\n"
+"Last-Translator: nsdLabs\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+
+msgid "Treasury"
+msgstr "الخزينة"
+
+#. Statuses of a received cheque
+msgid "In Wallet"
+msgstr "حافظة شيكات واردة"
+
+msgid "Under Collection"
+msgstr "تحت التحصيل"
+
+msgid "Collected"
+msgstr "محصل"
+
+msgid "Cashed"
+msgstr "محصل فوري"
+
+msgid "Endorsed"
+msgstr "مظهر"
+
+msgid "Partially Encashed"
+msgstr "حافظة شيكات مرجعة"
+
+msgid "Withdrawn"
+msgstr "مسحوب"
+
+#. Cheque actions
+msgid "Cheque Actions"
+msgstr "إجراءات الشيك"
+
+msgid "Deposit Under Collection"
+msgstr "إيداع شيك تحت التحصيل"
+
+msgid "Collect Cheque"
+msgstr "صرف شيك تحت التحصيل"
+
+msgid "Reject Cheque"
+msgstr "رفض شيك تحت التحصيل"
+
+msgid "Cash Cheque"
+msgstr "تحصيل فوري للشيك"
+
+msgid "Endorse Cheque"
+msgstr "تظهير شيك"
+
+msgid "Transfer to Another Wallet"
+msgstr "تحويل إلى حافظة شيكات أخرى"
+
+msgid "Return to Party"
+msgstr "رد شيك"
+
+msgid "Return to Wallet"
+msgstr "إرجاع لحافظة شيكات واردة"
+
+msgid "Encash Cheque"
+msgstr "تسييل الشيك"
+
+msgid "Pay Cheque"
+msgstr "صرف الشيك"
+
+msgid "Withdraw Cheque"
+msgstr "سحب الشيك"
+
+msgid "Change Due Date"
+msgstr "تغيير تاريخ الاستحقاق"
+
+#. Cheque fields
+msgid "Cheque Details"
+msgstr "بيانات الشيك"
+
+msgid "Cheque Status"
+msgstr "حالة الشيك"
+
+msgid "Issued Cheque Status"
+msgstr "حالة الشيك الصادر"
+
+msgid "Cheque Type"
+msgstr "نوع الشيك"
+
+msgid "Cheque No"
+msgstr "رقم الشيك"
+
+msgid "Cheque Date"
+msgstr "تاريخ الشيك"
+
+msgid "Cheque Image"
+msgstr "صورة الشيك"
+
+msgid "Drawn Bank"
+msgstr "البنك المسحوب عليه"
+
+msgid "First Beneficiary"
+msgstr "المستفيد الأول"
+
+msgid "Beneficiary Name"
+msgstr "اسم المستفيد"
+
+msgid "Issuer Name"
+msgstr "اسم مصدر الشيك"
+
+msgid "Holder"
+msgstr "حامل الشيك"
+
+msgid "Company Bank"
+msgstr "بنك الشركة"
+
+msgid "Bank GL Account"
+msgstr "الحساب الجاري"
+
+msgid "Cheques Under Collection Account"
+msgstr "حساب شيكات برسم التحصيل"
+
+msgid "Cheques Payable Account"
+msgstr "حساب شيكات برسم الدفع"
+
+msgid "Cheque Tracking"
+msgstr "متابعة الشيك"
+
+msgid "Current Cheque Wallet"
+msgstr "حافظة الشيكات الحالية"
+
+msgid "Cheque Wallet Account"
+msgstr "حساب حافظة الشيكات"
+
+msgid "Reason for Rejection"
+msgstr "سبب الرفض"
+
+msgid "Encashed Amount"
+msgstr "المبلغ المسيل"
+
+msgid "Remaining Amount"
+msgstr "المبلغ المتبقي"
+
+msgid "Endorsed To"
+msgstr "مظهر إلى"
+
+msgid "Action Date"
+msgstr "تاريخ الإجراء"
+
+msgid "Bank Commission"
+msgstr "عمولة البنك"
+
+msgid "Amount to Encash"
+msgstr "مبلغ التسييل"
+
+msgid "Multiple Cheque Entry"
+msgstr "إدخال شيكات متعددة"
+
+msgid "Received Cheques"
+msgstr "الشيكات الواردة"
+
+msgid "Issued Cheques"
+msgstr "الشيكات الصادرة"
+
+msgid "Cheques Report"
+msgstr "تقرير الشيكات"
+
+msgid "Customer Balance with Cheque Status"
+msgstr "رصيد العميل مع حالة الشيكات"
+
+#. Company accounts
+msgid "Cheque Accounts"
+msgstr "حسابات الشيكات"
+
+msgid "Incoming Cheques Wallet Account"
+msgstr "حساب حافظة الشيكات الواردة"
+
+msgid "Rejected Cheques Account"
+msgstr "حساب الشيكات المرفوضة"
+
+msgid "Bank Commissions Account"
+msgstr "حساب عمولات البنك"
+
+msgid "Guarantee Cheque Accounts"
+msgstr "حسابات شيكات الضمان"
+
+msgid "Bank Guarantee Report"
+msgstr "تقرير خطابات الضمان"
+
+msgid "Guarantee Purpose"
+msgstr "الغرض من الضمان"
+
+msgid "Guarantee Category"
+msgstr "نوع خطاب الضمان"
+
+msgid "Advanced Payment"
+msgstr "دفعة مقدمة"
+
+msgid "Guarantee Accounts"
+msgstr "حسابات الضمان"
+
+msgid "Guarantee Deposit Account"
+msgstr "حساب تأمين خطابات الضمان"
+
+msgid "Fees Account"
+msgstr "حساب المصروفات البنكية"
+
+msgid "Return Account"
+msgstr "حساب الاسترداد"
+
+msgid "Issue Commission"
+msgstr "عمولة الإصدار"
+
+msgid "Banking Facilities"
+msgstr "التسهيلات البنكية"
+
+msgid "With Facilities"
+msgstr "بتسهيلات"
+
+msgid "Without Facilities"
+msgstr "بدون تسهيلات"
+
+msgid "Bank Rate %"
+msgstr "نسبة البنك %"
+
+msgid "Bank Amount"
+msgstr "مبلغ البنك"
+
+msgid "Facility Rate %"
+msgstr "نسبة التسهيلات %"
+
+msgid "Facility Amount"
+msgstr "مبلغ التسهيلات"
+
+msgid "Return Guarantee"
+msgstr "رد خطاب الضمان"
+
+msgid "Extend Validity"
+msgstr "مد الصلاحية"
+
+msgid "Return Date"
+msgstr "تاريخ الرد"
+
+msgid "New End Date"
+msgstr "تاريخ الانتهاء الجديد"
+
+msgid "Extended End Date"
+msgstr "تاريخ الانتهاء بعد المد"
+
+msgid "Valid Until"
+msgstr "ساري حتى"
+
+#. Messages
+msgid "Action {0} is not allowed for a cheque with status {1}."
+msgstr "الإجراء {0} غير مسموح به لشيك حالته {1}."
+
+msgid "Cheque actions must be cancelled newest first. Cancel {0} before this entry."
+msgstr "يجب إلغاء إجراءات الشيك من الأحدث إلى الأقدم. قم بإلغاء {0} قبل هذا القيد."
+
+msgid "Please select the company Bank Account."
+msgstr "برجاء تحديد الحساب البنكي للشركة."
+
+msgid "Please enter the reason for rejection."
+msgstr "برجاء إدخال سبب الرفض."
+
+msgid "Please enter the amount to encash."
+msgstr "برجاء إدخال مبلغ التسييل."
+
+msgid "Encashment amount {0} exceeds the remaining cheque amount {1}."
+msgstr "مبلغ التسييل {0} أكبر من المبلغ المتبقي من الشيك {1}."
+
+msgid "Cheque {0} is already registered in {1}."
+msgstr "الشيك {0} مسجل بالفعل في {1}."
+
+msgid "Mode of Payment {0} is not of type Cheque."
+msgstr "طريقة الدفع {0} ليست من نوع شيك."
+
+msgid "Please select the Return Account."
+msgstr "برجاء تحديد حساب الاسترداد."
+
+msgid "Bank Guarantee {0} has already been returned."
+msgstr "خطاب الضمان {0} تم رده بالفعل."

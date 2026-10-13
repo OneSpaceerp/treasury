@@ -1,0 +1,216 @@
+{
+ "charts": [
+  {
+   "chart_name": "Received Cheques by Status",
+   "label": "Received Cheques by Status"
+  },
+  {
+   "chart_name": "Live Guarantees by Purpose",
+   "label": "Live Guarantees by Purpose"
+  }
+ ],
+ "content": "[{\"id\": \"trs0000035\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Treasury</b></span>\", \"col\": 12}}, {\"id\": \"trs0000036\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cheques In Wallet\", \"col\": 3}}, {\"id\": \"trs0000037\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cheques Under Collection\", \"col\": 3}}, {\"id\": \"trs0000038\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Issued Cheques Outstanding\", \"col\": 3}}, {\"id\": \"trs0000039\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Live Guarantees Amount\", \"col\": 3}}, {\"id\": \"trs0000040\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Received Cheques by Status\", \"col\": 6}}, {\"id\": \"trs0000041\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Live Guarantees by Purpose\", \"col\": 6}}, {\"id\": \"trs0000042\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"trs0000043\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\"><b>Shortcuts</b></span>\", \"col\": 12}}, {\"id\": \"trs0000044\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company\", \"col\": 3}}, {\"id\": \"trs0000045\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Bank Account\", \"col\": 3}}, {\"id\": \"trs0000046\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Mode of Payment\", \"col\": 3}}, {\"id\": \"trs0000047\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Bank\", \"col\": 3}}, {\"id\": \"trs0000048\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"trs0000049\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\"><b>Reports &amp; Masters</b></span>\", \"col\": 12}}, {\"id\": \"trs0000050\", \"type\": \"card\", \"data\": {\"card_name\": \"Setup\", \"col\": 4}}, {\"id\": \"trs0000051\", \"type\": \"card\", \"data\": {\"card_name\": \"Cheques\", \"col\": 4}}, {\"id\": \"trs0000052\", \"type\": \"card\", \"data\": {\"card_name\": \"Guarantees\", \"col\": 4}}]",
+ "creation": "2026-10-14 12:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "landmark",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Treasury",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setup",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company",
+   "link_count": 0,
+   "link_to": "Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank",
+   "link_count": 0,
+   "link_to": "Bank",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank Account",
+   "link_count": 0,
+   "link_to": "Bank Account",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mode of Payment",
+   "link_count": 0,
+   "link_to": "Mode of Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Group",
+   "link_count": 0,
+   "link_to": "Customer Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cheques",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Multiple Cheque Entry",
+   "link_count": 0,
+   "link_to": "Multiple Cheque Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Cheques Report",
+   "link_count": 0,
+   "link_to": "Cheques Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": "Payment Entry",
+   "report_ref_doctype": "Payment Entry"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Guarantees",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank Guarantee",
+   "link_count": 0,
+   "link_to": "Bank Guarantee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Bank Guarantee Report",
+   "link_count": 0,
+   "link_to": "Bank Guarantee Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": "Bank Guarantee",
+   "report_ref_doctype": "Bank Guarantee"
+  }
+ ],
+ "modified": "2026-10-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Treasury",
+ "name": "Treasury",
+ "number_cards": [
+  {
+   "label": "Cheques In Wallet",
+   "number_card_name": "Cheques In Wallet"
+  },
+  {
+   "label": "Cheques Under Collection",
+   "number_card_name": "Cheques Under Collection"
+  },
+  {
+   "label": "Issued Cheques Outstanding",
+   "number_card_name": "Issued Cheques Outstanding"
+  },
+  {
+   "label": "Live Guarantees Amount",
+   "number_card_name": "Live Guarantees Amount"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 62.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "label": "Company",
+   "link_to": "Company",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Grey",
+   "label": "Bank Account",
+   "link_to": "Bank Account",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Grey",
+   "label": "Mode of Payment",
+   "link_to": "Mode of Payment",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Grey",
+   "label": "Bank",
+   "link_to": "Bank",
+   "type": "DocType",
+   "doc_view": "List"
+  }
+ ],
+ "standard": 1,
+ "title": "Treasury",
+ "type": "Workspace"
+}

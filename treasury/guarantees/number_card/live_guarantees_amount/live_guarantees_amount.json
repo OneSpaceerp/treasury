@@ -1,0 +1,22 @@
+{
+ "aggregate_function_based_on": "amount",
+ "creation": "2026-10-14 12:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Bank Guarantee",
+ "dynamic_filters_json": "[[\"Bank Guarantee\", \"company\", \"=\", \"frappe.defaults.get_user_default(\\\"Company\\\")\"]]",
+ "filters_json": "[[\"Bank Guarantee\", \"docstatus\", \"=\", \"1\"], [\"Bank Guarantee\", \"bank_guarantee_status\", \"in\", [\"Issued\", \"Extended\"]]]",
+ "function": "Sum",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Live Guarantees Amount",
+ "modified": "2026-10-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Guarantees",
+ "name": "Live Guarantees Amount",
+ "owner": "Administrator",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Monthly",
+ "type": "Document Type"
+}

@@ -1,0 +1,209 @@
+{
+ "charts": [
+  {
+   "chart_name": "Received Cheques by Status",
+   "label": "Received Cheques by Status"
+  },
+  {
+   "chart_name": "Issued Cheques by Status",
+   "label": "Issued Cheques by Status"
+  }
+ ],
+ "content": "[{\"id\": \"trs0000001\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Cheques</b></span>\", \"col\": 12}}, {\"id\": \"trs0000002\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cheques In Wallet\", \"col\": 3}}, {\"id\": \"trs0000003\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Cheques Under Collection\", \"col\": 3}}, {\"id\": \"trs0000004\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Rejected Cheques\", \"col\": 3}}, {\"id\": \"trs0000005\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Issued Cheques Outstanding\", \"col\": 3}}, {\"id\": \"trs0000006\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Received Cheques by Status\", \"col\": 6}}, {\"id\": \"trs0000007\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Issued Cheques by Status\", \"col\": 6}}, {\"id\": \"trs0000008\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"trs0000009\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\"><b>Shortcuts</b></span>\", \"col\": 12}}, {\"id\": \"trs0000010\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"New Multiple Cheque Entry\", \"col\": 3}}, {\"id\": \"trs0000011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Payment Entry\", \"col\": 3}}, {\"id\": \"trs0000012\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Multiple Cheque Entry\", \"col\": 3}}, {\"id\": \"trs0000013\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Cheques Report\", \"col\": 3}}, {\"id\": \"trs0000014\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"trs0000015\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\"><b>Reports &amp; Masters</b></span>\", \"col\": 12}}, {\"id\": \"trs0000016\", \"type\": \"card\", \"data\": {\"card_name\": \"Transactions\", \"col\": 4}}, {\"id\": \"trs0000017\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"trs0000018\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 4}}]",
+ "creation": "2026-10-14 12:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "banknote",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Cheques",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transactions",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Payment Entry",
+   "link_count": 0,
+   "link_to": "Payment Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Multiple Cheque Entry",
+   "link_count": 0,
+   "link_to": "Multiple Cheque Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Journal Entry",
+   "link_count": 0,
+   "link_to": "Journal Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Cheques Report",
+   "link_count": 0,
+   "link_to": "Cheques Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": "Payment Entry",
+   "report_ref_doctype": "Payment Entry"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Customer Balance with Cheque Status",
+   "link_count": 0,
+   "link_to": "Customer Balance with Cheque Status",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": "Payment Entry",
+   "report_ref_doctype": "Payment Entry"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "General Ledger",
+   "link_count": 0,
+   "link_to": "General Ledger",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": "GL Entry",
+   "report_ref_doctype": "GL Entry"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank",
+   "link_count": 0,
+   "link_to": "Bank",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank Account",
+   "link_count": 0,
+   "link_to": "Bank Account",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mode of Payment",
+   "link_count": 0,
+   "link_to": "Mode of Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-10-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Cheques",
+ "name": "Cheques",
+ "number_cards": [
+  {
+   "label": "Cheques In Wallet",
+   "number_card_name": "Cheques In Wallet"
+  },
+  {
+   "label": "Cheques Under Collection",
+   "number_card_name": "Cheques Under Collection"
+  },
+  {
+   "label": "Rejected Cheques",
+   "number_card_name": "Rejected Cheques"
+  },
+  {
+   "label": "Issued Cheques Outstanding",
+   "number_card_name": "Issued Cheques Outstanding"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 60.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "label": "New Multiple Cheque Entry",
+   "link_to": "Multiple Cheque Entry",
+   "type": "DocType",
+   "doc_view": "New"
+  },
+  {
+   "color": "Grey",
+   "label": "Payment Entry",
+   "link_to": "Payment Entry",
+   "type": "DocType",
+   "doc_view": "List",
+   "stats_filter": "{\"mode_of_payment_type\":\"Cheque\",\"docstatus\":1}",
+   "format": "{} Cheques"
+  },
+  {
+   "color": "Grey",
+   "label": "Multiple Cheque Entry",
+   "link_to": "Multiple Cheque Entry",
+   "type": "DocType",
+   "doc_view": "List"
+  },
+  {
+   "color": "Grey",
+   "label": "Cheques Report",
+   "link_to": "Cheques Report",
+   "type": "Report"
+  }
+ ],
+ "standard": 1,
+ "title": "Cheques",
+ "type": "Workspace"
+}

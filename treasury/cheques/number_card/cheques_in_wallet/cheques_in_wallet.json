@@ -1,0 +1,22 @@
+{
+ "aggregate_function_based_on": "base_received_amount",
+ "creation": "2026-10-14 12:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Payment Entry",
+ "dynamic_filters_json": "[[\"Payment Entry\", \"company\", \"=\", \"frappe.defaults.get_user_default(\\\"Company\\\")\"]]",
+ "filters_json": "[[\"Payment Entry\", \"docstatus\", \"=\", \"1\"], [\"Payment Entry\", \"mode_of_payment_type\", \"=\", \"Cheque\"], [\"Payment Entry\", \"payment_type\", \"=\", \"Receive\"], [\"Payment Entry\", \"cheque_status\", \"=\", \"In Wallet\"]]",
+ "function": "Sum",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "Cheques In Wallet",
+ "modified": "2026-10-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Cheques",
+ "name": "Cheques In Wallet",
+ "owner": "Administrator",
+ "show_percentage_stats": 0,
+ "stats_time_interval": "Monthly",
+ "type": "Document Type"
+}

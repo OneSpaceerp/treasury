@@ -1,0 +1,176 @@
+{
+ "charts": [
+  {
+   "chart_name": "Live Guarantees by Purpose",
+   "label": "Live Guarantees by Purpose"
+  },
+  {
+   "chart_name": "Live Guarantees by Bank",
+   "label": "Live Guarantees by Bank"
+  }
+ ],
+ "content": "[{\"id\": \"trs0000019\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Guarantees</b></span>\", \"col\": 12}}, {\"id\": \"trs0000020\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Live Guarantees\", \"col\": 4}}, {\"id\": \"trs0000021\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Live Guarantees Amount\", \"col\": 4}}, {\"id\": \"trs0000022\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"Expired Guarantees\", \"col\": 4}}, {\"id\": \"trs0000023\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Live Guarantees by Purpose\", \"col\": 6}}, {\"id\": \"trs0000024\", \"type\": \"chart\", \"data\": {\"chart_name\": \"Live Guarantees by Bank\", \"col\": 6}}, {\"id\": \"trs0000025\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"trs0000026\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\"><b>Shortcuts</b></span>\", \"col\": 12}}, {\"id\": \"trs0000027\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"New Bank Guarantee\", \"col\": 3}}, {\"id\": \"trs0000028\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Bank Guarantee\", \"col\": 3}}, {\"id\": \"trs0000029\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Bank Guarantee Report\", \"col\": 3}}, {\"id\": \"trs0000030\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"trs0000031\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h5\\\"><b>Reports &amp; Masters</b></span>\", \"col\": 12}}, {\"id\": \"trs0000032\", \"type\": \"card\", \"data\": {\"card_name\": \"Transactions\", \"col\": 4}}, {\"id\": \"trs0000033\", \"type\": \"card\", \"data\": {\"card_name\": \"Reports\", \"col\": 4}}, {\"id\": \"trs0000034\", \"type\": \"card\", \"data\": {\"card_name\": \"Masters\", \"col\": 4}}]",
+ "creation": "2026-10-14 12:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "shield-check",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Guarantees",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Transactions",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank Guarantee",
+   "link_count": 0,
+   "link_to": "Bank Guarantee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Journal Entry",
+   "link_count": 0,
+   "link_to": "Journal Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reports",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Bank Guarantee Report",
+   "link_count": 0,
+   "link_to": "Bank Guarantee Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": "Bank Guarantee",
+   "report_ref_doctype": "Bank Guarantee"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "General Ledger",
+   "link_count": 0,
+   "link_to": "General Ledger",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": "GL Entry",
+   "report_ref_doctype": "GL Entry"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Masters",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank",
+   "link_count": 0,
+   "link_to": "Bank",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Bank Account",
+   "link_count": 0,
+   "link_to": "Bank Account",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Group",
+   "link_count": 0,
+   "link_to": "Customer Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-10-14 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Guarantees",
+ "name": "Guarantees",
+ "number_cards": [
+  {
+   "label": "Live Guarantees",
+   "number_card_name": "Live Guarantees"
+  },
+  {
+   "label": "Live Guarantees Amount",
+   "number_card_name": "Live Guarantees Amount"
+  },
+  {
+   "label": "Expired Guarantees",
+   "number_card_name": "Expired Guarantees"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 61.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "label": "New Bank Guarantee",
+   "link_to": "Bank Guarantee",
+   "type": "DocType",
+   "doc_view": "New"
+  },
+  {
+   "color": "Grey",
+   "label": "Bank Guarantee",
+   "link_to": "Bank Guarantee",
+   "type": "DocType",
+   "doc_view": "List",
+   "stats_filter": "{\"docstatus\":1,\"bank_guarantee_status\":[\"in\",[\"Issued\",\"Extended\"]]}",
+   "format": "{} Live"
+  },
+  {
+   "color": "Grey",
+   "label": "Bank Guarantee Report",
+   "link_to": "Bank Guarantee Report",
+   "type": "Report"
+  }
+ ],
+ "standard": 1,
+ "title": "Guarantees",
+ "type": "Workspace"
+}
