@@ -68,8 +68,8 @@ jobs:
           set -o pipefail
           {
             echo "== install apps"
-            bench get-app --branch version-16 erpnext
-            bench get-app $GITHUB_WORKSPACE
+            bench get-app --skip-assets --branch version-16 erpnext
+            bench get-app --skip-assets $GITHUB_WORKSPACE
             bench setup requirements --dev
             bench new-site --db-root-password root --admin-password admin test_site
             bench --site test_site install-app erpnext
