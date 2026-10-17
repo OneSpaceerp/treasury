@@ -25,6 +25,11 @@ RESET_ON_DRAFT = {
 	"cheque_new_date": None,
 }
 
+# Set by the Deposit action on a received cheque, never entered on its draft.
+RECEIVED_BANK_FIELDS = dict.fromkeys(
+	("cheque_bank", "bank_acc", "account", "collection_fee_account", "payable_account")
+)
+
 
 def validate(doc, method=None):
 	doc.mode_of_payment_type = (
@@ -42,6 +47,9 @@ def validate(doc, method=None):
 
 	if doc.docstatus == 0:
 		doc.update(RESET_ON_DRAFT)
+		if doc.payment_type == state.RECEIVE:
+			# A received cheque meets the company bank only when it is deposited.
+			doc.update(RECEIVED_BANK_FIELDS)
 
 	if not doc.reference_no or not doc.reference_date:
 		frappe.throw(_("Cheque No and Cheque Date are mandatory for a cheque payment."))
