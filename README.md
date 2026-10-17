@@ -79,10 +79,15 @@ All Treasury accounts must be in the company currency; see Limitations.
 
 ## Upgrading from the earlier apps
 
-Run the read-only pre-flight check first. It needs only `bench get-app`, not an install, and changes nothing:
+Run the read-only pre-flight check first. It changes nothing, and needs only `bench get-app`, not an install.
+`bench execute` refuses apps that are not installed on the site, so run it from the site console:
 
 ```bash
-bench --site <site> execute treasury.legacy.preflight
+bench --site <site> console
+```
+
+```python
+from treasury.legacy import preflight; preflight()
 ```
 
 It lists open cheques held in foreign-currency accounts (Treasury cannot act on these), draft cheque payments

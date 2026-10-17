@@ -125,9 +125,11 @@ def remove_legacy_desk_records() -> None:
 def preflight() -> None:
 	"""Read-only report to run before replacing the old apps on a site.
 
-	It changes nothing, and works whether or not Treasury is installed yet:
+	It changes nothing, and works whether or not Treasury is installed yet. Before
+	install, `bench execute` refuses the app, so call it from `bench --site <site>
+	console`:
 
-	    bench --site <site> execute treasury.legacy.preflight
+	    from treasury.legacy import preflight; preflight()
 	"""
 	report = []
 
