@@ -175,6 +175,7 @@ class TestChequeActions(TreasuryTestCase):
 		self.act(cheque, "deposit", bank_account=self.bank_account)
 		self.act(cheque, "collect")
 		copy = frappe.copy_doc(cheque)
+		copy.docstatus = 0  # as the desk's Duplicate does
 		copy.reference_no = self.next_cheque_no()
 		copy.insert()
 		self.assertFalse(copy.cheque_status)

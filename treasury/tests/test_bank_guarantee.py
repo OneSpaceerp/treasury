@@ -193,6 +193,7 @@ class TestBankGuarantee(TreasuryTestCase):
 		return_guarantee(guarantee.name, nowdate())
 		guarantee.reload()
 		copy = frappe.copy_doc(guarantee)
+		copy.docstatus = 0  # as the desk's Duplicate does
 		copy.insert()
 		self.assertEqual(copy.bank_guarantee_status, "New")
 		self.assertEqual(copy.issued, 0)
