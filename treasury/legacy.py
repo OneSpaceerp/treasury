@@ -12,7 +12,7 @@ apps. Re-run it at any time with:
 """
 
 import frappe
-from frappe.query_builder.functions import IfNull
+from frappe.query_builder.functions import Count, IfNull, Sum
 
 from treasury.cheques import state
 
@@ -151,12 +151,19 @@ def preflight() -> None:
 		say()
 		say("== Submitted cheques by status")
 		for payment_type, field in (("Receive", "cheque_status"), ("Pay", "cheque_status_pay")):
-			rows = frappe.get_all(
-				"Payment Entry",
-				filters={"docstatus": 1, "mode_of_payment_type": "Cheque", "payment_type": payment_type},
-				fields=[field + " as status", "count(name) as cheques", "sum(base_paid_amount) as amount"],
-				group_by=field,
-			)
+			pe = frappe.qb.DocType("Payment Entry")
+			rows = (
+				frappe.qb.from_(pe)
+				.select(
+					pe[field].as_("status"),
+					Count(pe.name).as_("cheques"),
+					Sum(pe.base_paid_amount).as_("amount"),
+				)
+				.where(pe.docstatus == 1)
+				.where(pe.mode_of_payment_type == "Cheque")
+				.where(pe.payment_type == payment_type)
+				.groupby(pe[field])
+			).run(as_dict=True)
 			for row in rows:
 				label = state.LEGACY_RECEIVE_STATUSES.get(row.status) or state.LEGACY_PAY_STATUSES.get(
 					row.status
@@ -264,12 +271,17 @@ def preflight() -> None:
 	say()
 	say("== Bank guarantees")
 	if frappe.db.has_column("Bank Guarantee", "bank_guarantee_status"):
-		for row in frappe.get_all(
-			"Bank Guarantee",
-			filters={"docstatus": 1},
-			fields=["bank_guarantee_status as status", "count(name) as guarantees", "sum(amount) as amount"],
-			group_by="bank_guarantee_status",
-		):
+		bg = frappe.qb.DocType("Bank Guarantee")
+		for row in (
+			frappe.qb.from_(bg)
+			.select(
+				bg.bank_guarantee_status.as_("status"),
+				Count(bg.name).as_("guarantees"),
+				Sum(bg.amount).as_("amount"),
+			)
+			.where(bg.docstatus == 1)
+			.groupby(bg.bank_guarantee_status)
+		).run(as_dict=True):
 			say(f"  {row.status or '(none)':12} {row.guarantees:6} guarantees  {row.amount or 0:,.2f}")
 		if frappe.db.has_column("Bank Guarantee", "party_type"):
 			missing = frappe.get_all(

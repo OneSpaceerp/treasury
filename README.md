@@ -87,7 +87,9 @@ bench --site <site> console
 ```
 
 ```python
-from treasury.legacy import preflight; preflight()
+from treasury.legacy import preflight
+
+preflight()
 ```
 
 It lists open cheques held in foreign-currency accounts (Treasury cannot act on these), draft cheque payments
