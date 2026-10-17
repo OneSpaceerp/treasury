@@ -79,6 +79,22 @@ All Treasury accounts must be in the company currency; see Limitations.
 
 ## Upgrading from the earlier apps
 
+Run the read-only pre-flight check first. It needs only `bench get-app`, not an install, and changes nothing:
+
+```bash
+bench --site <site> execute treasury.legacy.preflight
+```
+
+It lists open cheques held in foreign-currency accounts (Treasury cannot act on these), draft cheque payments
+missing a bank account, bank accounts missing cheque accounts, and whether the payback account doubles as the
+incoming wallet.
+
+**Rejected cheques account.** Treasury posts a rejected cheque to the account in *Rejected Cheques Account* (the old
+*Default Payback Cheque Wallet Account* field) and takes it back out of the same account when the cheque is
+redeposited, encashed or returned. The old app used two different accounts for this, which left balances behind.
+If cheques rejected under the old app are still open, their value is in the old payback account: leave the field
+on that account until they are settled, then switch it to a dedicated rejected-cheques account.
+
 Treasury refuses to install while `ecs_cheques`, `ecs_bguarantee` or `nsd_bguarantee` is installed, because they
 hook the same documents and every posting would be made twice. Take a backup, then:
 
