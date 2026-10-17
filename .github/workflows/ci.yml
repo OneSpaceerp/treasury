@@ -85,7 +85,7 @@ jobs:
           {
             echo "== run tests"
             bench --site test_site set-config allow_tests true
-            bench --site test_site run-tests --app treasury --verbose
+            bench --site test_site run-tests --app treasury
           } 2>&1 | tee -a "$RUNNER_TEMP/ci.log"
         env:
           TYPE: server
