@@ -85,7 +85,7 @@ jobs:
           {
             echo "== run tests"
             bench --site test_site set-config allow_tests true
-            bench --site test_site run-tests --app treasury
+            bench --site test_site run-tests --app treasury --verbose
           } 2>&1 | tee -a "$RUNNER_TEMP/ci.log"
         env:
           TYPE: server
@@ -95,6 +95,7 @@ jobs:
       - name: Publish log tail
         if: failure()
         run: |
-          tail -n 150 "$RUNNER_TEMP/ci.log" | cut -c1-400 > tail.txt
+          sed -n '/== run tests/,$p' "$RUNNER_TEMP/ci.log" | grep -v "^\s*$" | tail -n 400 | cut -c1-300 > tail.txt
+          [ -s tail.txt ] || tail -n 150 "$RUNNER_TEMP/ci.log" | cut -c1-300 > tail.txt
           message=$(awk '{gsub(/%/,"%25"); printf "%s%%0A", $0}' tail.txt)
           echo "::error title=CI log tail::$message"
